@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    background-color: turquoise;
+    height: 100vh;
+}
+
+.tablet,
+.mobile,
+.pc {
+    margin: auto;
+    font-size: 100px;
+    display: none;
+}
+
+/*Sample implementation of media query*/
+/*Mobile < 740px*/
+@media only screen and (max-width: 740px) {
+    .mobile {
+        display: block;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    .tablet {
+        display: block;
+    }
+}
+
+/*PC*/
+@media only screen and (min-width:1024px) {
+    .pc{
+        display: block;
+    }
+}
