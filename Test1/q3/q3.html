@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <h2>Crypto - Fiat Converter</h2>
+    </div>
+    <div class="form-group">
+        <div class="form-element">
+            <label for="currency">Amount</label>
+            <input type="text" name="" id="currency" class="form-control form-element-selection" placeholder="">
+        </div>
+        <div class="form-element">
+            <label for="currencySelectorFrom" class="element-label">From</label>
+            <select name="" id="currencySelectorFrom" class="form-element-selection">
+                <option>-- Choose a Currency --</option>
+                <option value="BTC">BTC</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">POUND</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label for="currencySelectorTo" class="element-label">To</label>
+            <select name="" id="currencySelectorTo" class="form-element-selection" >
+                <option>-- Choose a Currency --</option>
+                <option value="BTC">BTC</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">POUND</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <button type="submit" class="btn">Convert</button>
+        </div>
+    </div>
+    <div class="result-group"></div>
+</div>
+<script src="src.js"></script>
+</body>
+</html>
